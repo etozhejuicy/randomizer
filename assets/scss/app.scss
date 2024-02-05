@@ -1,0 +1,92 @@
+// colors
+@import "./components/colors";
+
+// utility
+@import "./utilities/utility";
+
+// normalize
+@import "./utilities/normalize";
+
+// layouts
+@import "../scss/layouts/header";
+@import "../scss/layouts/nav";
+
+// components
+@import "../scss/components/buttons";
+
+// responsive design
+:root {
+    --bs-body-font-family: "Montserrat";
+
+    font-size: calc(100vw / 375 * 16);
+    @media (min-width: 768px) {
+        font-size: calc(100vw / 768 * 16);
+    }
+    @media (min-width: 992px) {
+        font-size: calc(100vw / 992 * 16);
+    }
+    @media (min-width: 1200px) {
+        font-size: calc(100vw / 1440 * 16);
+    }
+    @media (min-width: 1440px) {
+        font-size: calc(100vw / 1440 * 16);
+    }
+    @media (min-width: 1600px) {
+        font-size: calc(100vw / 1440 * 16);
+    }
+    @media (min-width: 1920px) {
+        font-size: calc(100vw / 1600 * 16);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: 1rem;
+}
+
+img {
+    content-visibility: auto;
+}
+
+.section {
+    contain: layout;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%);
+    overflow-x: clip;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    padding: var(--header-height) 0 0;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+#mysprite {
+    display: none;
+}
