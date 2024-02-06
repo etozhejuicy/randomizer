@@ -1,0 +1,72 @@
+:root {
+  --tag-padding-y: 0.31rem;
+  --tag-padding-x: 0.63rem;
+  --tag-border-radius: 0.31rem;
+  --tag-background-color: var(--white-rgb);
+  --tag-text-color: var(--white-rgb);
+}
+
+.tag {
+  display: inline-block;
+  padding: var(--tag-padding-y) var(--tag-padding-x);
+  border-radius: var(--tag-border-radius);
+  background-color: rgba(var(--tag-background-color), 0.2);
+  color: rgba(var(--tag-background-color), 1);
+}
+
+.winner-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.winner-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.563rem;
+  row-gap: 1.563rem;
+  flex: 1;
+}
+.winner-card-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 0.625rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  justify-content: center;
+}
+.winner-card-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 10.31rem;
+  height: 11.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.winner-card-image > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  flex: 1;
+}
+.section-main > * {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */
