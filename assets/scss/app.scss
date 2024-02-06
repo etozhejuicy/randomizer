@@ -7,18 +7,14 @@
 // normalize
 @import "./utilities/normalize";
 
-// layouts
-@import "../scss/layouts/header";
-@import "../scss/layouts/nav";
-
 // components
 @import "../scss/components/buttons";
+@import "../scss/components/forms";
+@import "../scss/components/sticky-block";
 
 // responsive design
 :root {
-    --bs-body-font-family: "Montserrat";
-
-    font-size: calc(100vw / 375 * 16);
+    font-size: calc(100vw / 430 * 16);
     @media (min-width: 768px) {
         font-size: calc(100vw / 768 * 16);
     }
@@ -51,7 +47,7 @@ html {
 }
 
 body {
-    font-family: var(--bs-body-font-family);
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
 }
 
@@ -67,8 +63,10 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     min-height: 100vh;
     min-height: 100dvh;
+    padding: 1.875rem 0 0 0;
     background: radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%);
     overflow-x: clip;
 }
@@ -80,7 +78,7 @@ img {
     flex-direction: column;
     width: 100%;
     flex: 1;
-    padding: var(--header-height) 0 0;
+    padding: 1.875rem 0;
 }
 
 .wow {
