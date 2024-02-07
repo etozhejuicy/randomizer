@@ -1,5 +1,10 @@
+// components
 @import "../components/tag";
 @import "../components/winner-card";
+@import "../components/winner-badge";
+
+// sections
+@import "../sections/sticky.scss";
 
 .section-main {
     position: relative;

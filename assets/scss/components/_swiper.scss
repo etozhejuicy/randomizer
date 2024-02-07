@@ -1,7 +1,11 @@
 :root {
     --swiper-theme-color: var(--white);
+    --swiper-navigation-size: 1.66rem;
 }
 
+.swiper {
+    width: 100%;
+}
 .swiper-wrapper {
     width: 100% !important;
     height: 100% !important;

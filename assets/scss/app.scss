@@ -70,6 +70,7 @@ img {
     padding: 1.875rem 0 0 0;
     background: radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%);
     overflow-x: clip;
+    transition: background-image 0.6s ease;
 }
 
 .content {
@@ -79,7 +80,7 @@ img {
     flex-direction: column;
     width: 100%;
     flex: 1;
-    padding: 1.875rem 0;
+    padding: 1.875rem 0 0 0;
 }
 
 .wow {

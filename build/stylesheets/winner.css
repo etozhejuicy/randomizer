@@ -129,12 +129,7 @@
   color: rgba(var(--winner-badge-text-color), 0.8);
 }
 
-.section-sticky {
-  position: sticky;
-  top: 1rem;
-}
-
-.section-main {
+.section-winner {
   position: relative;
   z-index: 1;
   display: flex;
@@ -143,8 +138,38 @@
   min-height: 100%;
   flex: 1;
 }
-.section-main > * {
+.section-winner > * {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   width: 100%;
   height: 100%;
-}/*# sourceMappingURL=main.css.map */
+}
+.section-winner-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.875rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  flex: 1;
+}
+.section-winner-primary {
+  flex: 1;
+}
+.section-winner-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.875rem;
+  border-radius: 1.88rem 1.88rem 0rem 0rem;
+  background-color: var(--white);
+}
+.section-winner-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}/*# sourceMappingURL=winner.css.map */
