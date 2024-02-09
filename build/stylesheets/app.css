@@ -6489,8 +6489,8 @@ p {
   --form-border-radius: 1.56rem;
   --form-background-color: var(--dark-white-rgb);
   --form-background-color-opacity: 1;
-  --form-icon-width: 1rem;
-  --form-icon-height: 1rem;
+  --form-icon-width: 1.5rem;
+  --form-icon-height: 1.5rem;
 }
 
 .form-relative {
