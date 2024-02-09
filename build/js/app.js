@@ -9,6 +9,16 @@ if ($('#cube-animation').length) {
     });
 }
 
+if ($('#demo-animation').length) {
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('demo-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/json/animation/demo.json'
+    });
+}
+
 if ($('#success-animation').length) {
     const animation = lottie.loadAnimation({
         container: document.getElementById('success-animation'),
