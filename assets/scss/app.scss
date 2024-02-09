@@ -8,10 +8,15 @@
 @import "./utilities/normalize";
 
 // components
+@import "../scss/components/bottom";
 @import "../scss/components/buttons";
+@import "../scss/components/devider";
 @import "../scss/components/forms";
-@import "../scss/components/sticky-block";
+@import "../scss/components/preloader";
+@import "../scss/components/spinners";
+@import "../scss/components/stretched";
 @import "../scss/components/swiper";
+@import "../scss/components/text";
 
 // responsive design
 :root {
@@ -50,6 +55,7 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
+    background: radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%);
 }
 
 img {
@@ -68,7 +74,11 @@ img {
     min-height: 100vh;
     min-height: 100dvh;
     padding: 1.875rem 0 0 0;
-    background: radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%);
+    background-image: url("/assets/images/elements/root/pattern.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center top;
+    background-attachment: fixed;
     overflow-x: clip;
     transition: background-image 0.6s ease;
 }
@@ -80,7 +90,7 @@ img {
     flex-direction: column;
     width: 100%;
     flex: 1;
-    padding: 1.875rem 0 0 0;
+    padding: 1.875rem 0;
 }
 
 .wow {

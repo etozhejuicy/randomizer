@@ -33,7 +33,25 @@
         justify-content: flex-start;
         width: 100%;
         row-gap: 1.125rem;
-        column-gap: 1.125rem;
+        column-gap: 1.25rem;
+    }
+    &-group {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 2.813rem;
+        & > * {
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+            &:first-of-type {
+                margin-left: unset;
+            }
+            &:last-of-type {
+                margin-right: unset;
+            }
+        }
     }
     &-icon {
         position: relative;
@@ -59,7 +77,14 @@
             line-height: var(--sticky-block-line-height);
         }
     }
+    &-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(var(--sticky-block-text-color), 1);
+    }
     &-text {
+        flex: 1;
         color: rgba(var(--sticky-block-text-color), 1);
     }
 }

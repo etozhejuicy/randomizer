@@ -8,7 +8,7 @@
     margin-right: auto;
     margin-left: auto;
     @media (min-width: 768px) {
-        max-width: calc(26.88rem + 1.5rem);
+        max-width: calc(26.88rem + var(--bs-gutter-x));
     }
 }
 
@@ -17,5 +17,5 @@
     z-index: 1;
     display: block;
     width: 100%;
-    height: calc(85svh - (var(--header-height) + var(--footer-height)) - 1.5rem);
+    height: calc(85svh - (var(--header-height) + var(--footer-height)) - var(--bs-gutter-x));
 }

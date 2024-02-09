@@ -19,31 +19,61 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
 }
 .winner-card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 1.563rem;
   row-gap: 1.563rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .winner-card-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   row-gap: 0.625rem;
-  -moz-column-gap: 0.625rem;
-       column-gap: 0.625rem;
-  justify-content: center;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .winner-card-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 10.31rem;
   height: 11.25rem;
   margin-left: auto;
@@ -74,18 +104,27 @@
 .winner-badge {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: var(--winner-badge-gap);
-  -moz-column-gap: var(--winner-badge-gap);
-       column-gap: var(--winner-badge-gap);
+  -webkit-column-gap: var(--winner-badge-gap);
+     -moz-column-gap: var(--winner-badge-gap);
+          column-gap: var(--winner-badge-gap);
   padding: var(--winner-badge-padding-y) var(--winner-badge-padding-x);
   background-color: rgba(var(--winner-badge-background-color), 1);
   border-radius: var(--winner-badge-border-radius);
   -webkit-backdrop-filter: var(--winner-badge-backdrop-filter);
           backdrop-filter: var(--winner-badge-backdrop-filter);
-  box-shadow: var(--winner-badge-box-shadow);
+  -webkit-box-shadow: var(--winner-badge-box-shadow);
+          box-shadow: var(--winner-badge-box-shadow);
   font-weight: var(--winner-badge-font-weight);
   font-size: var(--winner-badge-font-size);
   line-height: var(--winner-badge-line-height);
@@ -95,8 +134,12 @@
 .winner-badge-avatar {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: var(--winner-badge-avatar-size);
   height: var(--winner-badge-avatar-size);
   border-radius: 1.25rem;
@@ -129,32 +172,62 @@
   color: rgba(var(--winner-badge-text-color), 0.8);
 }
 
+.section-sticky {
+  position: sticky;
+  top: 1rem;
+  z-index: 10;
+}
+
 .section-winner {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   min-height: 100%;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .section-winner > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 100%;
   height: 100%;
 }
 .section-winner-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 1.875rem;
-  -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
-  flex: 1;
+  -webkit-column-gap: 1.875rem;
+     -moz-column-gap: 1.875rem;
+          column-gap: 1.875rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .section-winner-primary {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .section-winner-content {
   position: relative;
@@ -167,9 +240,15 @@
   background-color: var(--white);
 }
 .section-winner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 0.625rem;
-  -moz-column-gap: 0.625rem;
-       column-gap: 0.625rem;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
 }/*# sourceMappingURL=winner.css.map */

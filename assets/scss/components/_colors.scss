@@ -1,8 +1,12 @@
 :root {
     --white: #ffffff;
     --white-rgb: 255, 255, 255;
+    --dark-white: #fafafa;
+    --dark-white-rgb: 250, 250, 250;
     --grey: #dddddd;
     --grey-rgb: 221, 221, 221;
+    --blue: #8696bb;
+    --blue-rgb: 134, 150, 187;
     --black: #000000;
     --black-rgb: 0, 0, 0;
     --primary: #75afff;
@@ -29,6 +33,7 @@
 $white: #ffffff;
 $dark-white: #fafafa;
 $grey: #eeeeee;
+$blue: #8696bb;
 $dark: #0e0e0e;
 $green: #65cb82;
 $primary: #75afff !default;
@@ -54,6 +59,7 @@ $colors: (
     $black: "black",
     $orange: "orange",
     $purple: "purple",
+    $blue: "blue",
     $transparent: "transparent"
 );
 
