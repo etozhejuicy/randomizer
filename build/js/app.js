@@ -1,3 +1,16 @@
+if ($('.preloader-container').length) {
+    setTimeout(() => {
+        $('.preloader-container').animate({
+            opacity: '0',
+            visibility: 'hidden'
+        }, {
+            easing: 'linear',
+            duration: 1000,
+        });
+        $('.preloader-container').remove();
+    }, 2000);
+}
+
 // анимация на главном экране с кубом
 if ($('#cube-animation').length) {
     const animation = lottie.loadAnimation({
@@ -9,6 +22,7 @@ if ($('#cube-animation').length) {
     });
 }
 
+// анимация на экране проверки
 if ($('#demo-animation').length) {
     const animation = lottie.loadAnimation({
         container: document.getElementById('demo-animation'),
@@ -19,6 +33,7 @@ if ($('#demo-animation').length) {
     });
 }
 
+// анимация на экране участник розыгрыша
 if ($('#success-animation').length) {
     const animation = lottie.loadAnimation({
         container: document.getElementById('success-animation'),

@@ -5004,10 +5004,26 @@ p {
   margin-top: 0;
 }
 
+.block-animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 19.13rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bottom {
   --bs-gutter-x: 1.5rem;
   position: sticky;
-  top: 100%;
+  top: 0;
   z-index: 2;
   width: 100%;
   margin-left: auto;
@@ -5086,8 +5102,6 @@ p {
   fill: currentColor;
 }
 .btn .spinner-border {
-  width: 0.65rem;
-  height: 0.65rem;
   padding: 0;
 }
 .btn:hover {
@@ -7214,11 +7228,12 @@ textarea.form-control.is-invalid {
   visibility: hidden;
 }
 .preloader-container {
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 2000;
   display: block;
   width: 100%;
-  height: calc(85svh - (var(--header-height) + var(--footer-height)) - 1.5rem);
+  height: 100%;
+  background-color: var(--primary);
 }
 
 .spinner-grow,
@@ -7426,9 +7441,24 @@ html {
 }
 
 body {
+  position: relative;
+  z-index: 1;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   background: radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%);
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/elements/root/pattern.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 img {
@@ -7454,11 +7484,6 @@ img {
   min-height: 100vh;
   min-height: 100dvh;
   padding: 1.875rem 0 0 0;
-  background-image: url("/assets/images/elements/root/pattern.png");
-  background-repeat: repeat;
-  background-size: auto;
-  background-position: center top;
-  background-attachment: fixed;
   overflow-x: clip;
   -webkit-transition: background-image 0.6s ease;
   transition: background-image 0.6s ease;

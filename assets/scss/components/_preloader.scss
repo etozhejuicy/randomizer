@@ -14,10 +14,11 @@
         visibility: hidden;
     }
     &-container {
-        position: relative;
-        z-index: 1;
+        position: fixed;
+        z-index: 2000;
         display: block;
         width: 100%;
-        height: calc(85svh - (var(--header-height) + var(--footer-height)) - 1.5rem);
+        height: 100%;
+        background-color: var(--primary);
     }
 }
