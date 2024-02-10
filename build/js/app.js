@@ -1,5 +1,11 @@
-var preloader = $('.preloader-container');
+const preloader = $('.preloader-container');
 
+const menu = $('.menu');
+const menuButton = $('[menu-open]');
+const menuToggle = $('[menu-toggle]');
+const menuClose = $('[menu-close]');
+
+// preloader
 if (preloader.length) {
     setTimeout(() => {
         preloader.animate({
@@ -10,6 +16,28 @@ if (preloader.length) {
             preloader.remove();
         }, 1000)
     }, 2000);
+}
+
+// menu
+if (menu.length) {
+    function showMenu() {
+        $('body').addClass('menu-is-open');
+        menu.addClass('show');
+    };
+
+    function hideMenu() {
+        $('body').removeClass('menu-is-open');
+        menu.removeClass('show');
+    };
+
+    function toggleMenu() {
+        $('body').toggleClass('menu-is-open');
+        menu.toggleClass('show');
+    }
+
+    menuButton.on('click', showMenu);
+    menuClose.on('click', hideMenu);
+    menuToggle.on('click', toggleMenu);
 }
 
 // анимация на главном экране с кубом

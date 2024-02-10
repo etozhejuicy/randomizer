@@ -180,6 +180,17 @@
             justify-content: center;
         }
     }
+    &-menu {
+        &-close {
+            --bs-btn-padding-y: 2rem;
+            --bs-btn-font-size: 1.38rem;
+            --bs-btn-font-weight: 600;
+            --bs-btn-line-height: 1.69rem;
+            --bs-btn-color: var(--white);
+            --bs-btn-border-color: transparent;
+            --bs-border-radius: 1.88rem 1.88rem 0rem 0rem;
+        }
+    }
 }
 
 // exp
