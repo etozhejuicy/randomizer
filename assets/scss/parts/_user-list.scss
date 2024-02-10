@@ -1,0 +1,12 @@
+:root {
+    --user-list-gap: 0.625rem;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--user-list-gap);
+    column-gap: var(--user-list-gap);
+    &-winner {
+    }
+}

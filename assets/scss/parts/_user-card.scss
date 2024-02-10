@@ -68,10 +68,16 @@
     &-name {
         font-weight: 600;
         font-size: 1.38rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &-description {
         font-size: 1rem;
         color: rgba(var(--user-card-color), 0.5);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &-actions {
         & > * {
