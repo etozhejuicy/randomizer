@@ -1,9 +1,10 @@
 const preloader = $('.preloader-container');
-
 const menu = $('.menu');
 const menuButton = $('[menu-open]');
 const menuToggle = $('[menu-toggle]');
 const menuClose = $('[menu-close]');
+
+var hint = $('.hint');
 
 // preloader
 if (preloader.length) {
@@ -132,5 +133,12 @@ if ($('[data-form-copy]').length) {
     buttonCopy.on('click', function () {
         formCopy.select();
         document.execCommand("copy");
+        if (buttonCopy.attr('data-form-copy') == hint.attr('data-hint-id')) {
+            hint.text(hint.attr('data-hint-text'));
+            hint.addClass('show');
+            setTimeout(() => {
+                hint.removeClass('show');
+            }, 2000);
+        }
     });
 }
