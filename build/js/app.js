@@ -95,3 +95,15 @@ if ($('#swiperWinner').length) {
         }
     }, 500);
 }
+
+// копирование текста в буфер обмена
+if ($('[data-form-copy]').length) {
+    var buttonCopy = $('[data-form-copy]'),
+        formCopy = buttonCopy.parents().find('input').attr('id', buttonCopy.attr('data-form-copy'));
+
+    buttonCopy.on('click', function () {
+        formCopy.select();
+        document.execCommand("copy");
+        console.log(buttonCopy, formCopy);
+    });
+}

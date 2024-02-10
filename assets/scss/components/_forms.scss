@@ -175,7 +175,15 @@
         }
         &:disabled,
         &.disabled {
-            --form-font-color-opacity: 1;
+            pointer-events: none;
+            cursor: default;
+            filter: none;
+        }
+        &[disabled] ~ .form-check-label,
+        &:disabled ~ .form-check-label,
+        &.disabled ~ .form-check-label {
+            pointer-events: none;
+            cursor: default;
         }
     }
     &-floating {
