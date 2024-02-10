@@ -173,6 +173,11 @@
         &:hover:not(:disabled):not([readonly])::file-selector-button {
             background-color: var(--bs-secondary-bg);
         }
+        &:read-only,
+        &[readonly],
+        &:is([readonly]) {
+            color: rgba(var(--form-font-color), var(--form-font-color-opacity));
+        }
         &:disabled,
         &.disabled {
             pointer-events: none;

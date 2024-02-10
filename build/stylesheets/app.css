@@ -6668,6 +6668,12 @@ p {
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: var(--bs-secondary-bg);
 }
+.form-control:-moz-read-only {
+  color: rgba(var(--form-font-color), var(--form-font-color-opacity));
+}
+.form-control:read-only, .form-control[readonly], .form-control:is([readonly]) {
+  color: rgba(var(--form-font-color), var(--form-font-color-opacity));
+}
 .form-control:disabled, .form-control.disabled {
   pointer-events: none;
   cursor: default;
