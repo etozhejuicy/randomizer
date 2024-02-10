@@ -7207,6 +7207,10 @@ textarea.form-control.is-invalid {
           justify-content: center;
   width: var(--preloader-width);
   height: var(--preloader-height);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 .preloader .visually-hidden {
   visibility: hidden;

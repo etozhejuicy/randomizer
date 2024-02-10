@@ -10,6 +10,11 @@
     justify-content: center;
     width: var(--preloader-width);
     height: var(--preloader-height);
+    opacity: 1;
+    visibility: visible;
+    transition:
+        opacity 1s ease-in-out,
+        visibility 1s ease-in-out;
     & .visually-hidden {
         visibility: hidden;
     }
