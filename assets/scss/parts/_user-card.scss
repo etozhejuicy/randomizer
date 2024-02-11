@@ -64,8 +64,12 @@
         flex: 1;
         row-gap: var(--user-card-content-gap);
         column-gap: var(--user-card-content-gap);
+        max-width: 100%;
+        overflow: hidden;
     }
     &-name {
+        display: block;
+        max-width: 100%;
         font-weight: 600;
         font-size: 1.38rem;
         white-space: nowrap;

@@ -43,4 +43,12 @@
             overflow-y: auto;
         }
     }
+    &-button {
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+        margin-right: calc(1.875rem * -1);
+        margin-left: calc(1.875rem * -1);
+        transform: translateY(1.875rem);
+    }
 }
