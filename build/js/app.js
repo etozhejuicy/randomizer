@@ -9,6 +9,7 @@ const menuClose = $('[menu-close]');
 var hint = $('.hint');
 var tooltip = $('[data-tooltip-id]');
 var tooltipButton = $('[data-tooltip-toggle]');
+var buttonCopy = $('[data-form-copy]');
 
 // preloader
 if (preloader.length) {
@@ -106,6 +107,25 @@ if (tooltip.length) {
             }
         })
     }
+}
+
+// копирование текста в буфер обмена
+if (buttonCopy.length) {
+    var formCopy = buttonCopy.parents().find('input').attr('id', buttonCopy.attr('data-form-copy'));
+
+    buttonCopy.on('click', function () {
+        formCopy.select();
+        document.execCommand("copy");
+
+        if (buttonCopy.attr('data-form-copy') == hint.attr('data-hint-id')) {
+            hint.text(hint.attr('data-hint-text'));
+            hint.addClass('show');
+            formCopy.blur();
+            setTimeout(() => {
+                hint.removeClass('show');
+            }, 2000);
+        }
+    });
 }
 
 // анимация на главном экране с кубом
@@ -223,24 +243,4 @@ if ($('#swiperWinner').length) {
             $('body').css('background-image', 'radial-gradient(89% 48% at 50% 8%, rgb(var(--primary-rgb)), rgb(var(--primary-light-rgb)) 100%)');
         }
     }, 500);
-}
-
-// копирование текста в буфер обмена
-if ($('[data-form-copy]').length) {
-    var buttonCopy = $('[data-form-copy]'),
-        formCopy = buttonCopy.parents().find('input').attr('id', buttonCopy.attr('data-form-copy'));
-
-    buttonCopy.on('click', function () {
-        formCopy.select();
-        document.execCommand("copy");
-
-        if (buttonCopy.attr('data-form-copy') == hint.attr('data-hint-id')) {
-            hint.text(hint.attr('data-hint-text'));
-            hint.addClass('show');
-            formCopy.blur();
-            setTimeout(() => {
-                hint.removeClass('show');
-            }, 2000);
-        }
-    });
 }

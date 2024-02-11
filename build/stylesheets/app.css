@@ -5103,6 +5103,9 @@ p {
   padding: 1.875rem;
   border-radius: 1.88rem 1.88rem 0rem 0rem;
   background-color: var(--white);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 .bottom-fill {
   display: -webkit-box;
