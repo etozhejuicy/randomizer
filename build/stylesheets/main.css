@@ -523,6 +523,13 @@
      -moz-column-gap: var(--user-list-gap);
           column-gap: var(--user-list-gap);
 }
+.user-list-winner {
+  counter-increment: item 3;
+}
+.user-list-winner .user-card {
+  counter-reset: 3;
+}
+
 :root {
   --user-status-padding-y: 0.31rem;
   --user-status-padding-x: 0.63rem;
