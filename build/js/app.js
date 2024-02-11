@@ -49,7 +49,7 @@ if (menu.length) {
 // tooltip
 if (tooltip.length) {
 
-    var tooltipePosition = () => {
+    var tooltipPosition = () => {
         if (tooltipButton.attr('data-tooltip-position') == 'bottom center') {
             tooltip.attr('data-tooltip-pos', 'bottom center');
             tooltip.css('top', tooltipButton.offset().top + (tooltipButton.height() * 2));
@@ -83,23 +83,19 @@ if (tooltip.length) {
     }
 
     if (tooltip.attr('data-tooltip-id') == tooltipButton.attr('data-tooltip-toggle')) {
-        tooltipePosition();
+        tooltipPosition();
 
-        if (('ontouchstart' in window) ||
-            (navigator.maxTouchPoints > 0) ||
-            (navigator.msMaxTouchPoints > 0)) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             tooltipButton.on('touchstart', tooltipToggle);
         } else {
             tooltipButton.on('mouseenter', tooltipShow);
             tooltipButton.on('mouseleave', tooltipHide);
         }
 
-        $(window).on('resize', () => {
-            tooltipePosition();
+        $(window).on('resize', function () {
+            tooltipPosition();
 
-            if (('ontouchstart' in window) ||
-                (navigator.maxTouchPoints > 0) ||
-                (navigator.msMaxTouchPoints > 0)) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 tooltipButton.on('touchstart', tooltipToggle);
             } else {
                 tooltipButton.on('mouseenter', tooltipShow);
