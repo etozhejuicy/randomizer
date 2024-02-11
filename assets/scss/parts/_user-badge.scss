@@ -74,4 +74,22 @@
             color: rgba(var(--user-badge-color), 0.8);
         }
     }
+    &-profile {
+        --user-badge-padding-y: 0;
+        --user-badge-padding-x: 0;
+        --user-badge-border-radius: unset;
+        --user-badge-wrapper-gap: 1rem;
+        --user-badge-content-gap: 0.313rem;
+        --user-badge-color: var(--white-rgb);
+        background-color: unset;
+        cursor: default;
+        & .user-badge-description {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            row-gap: var(--user-badge-wrapper-gap);
+            column-gap: var(--user-badge-wrapper-gap);
+        }
+    }
 }

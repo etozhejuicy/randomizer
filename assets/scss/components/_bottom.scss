@@ -20,4 +20,15 @@
         border-radius: 1.88rem 1.88rem 0rem 0rem;
         background-color: var(--white);
     }
+    &-fill {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        & .bottom-inner {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-height: 100%;
+        }
+    }
 }

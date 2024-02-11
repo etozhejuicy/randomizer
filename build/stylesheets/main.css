@@ -272,6 +272,35 @@
   --bs-btn-size: 2rem;
   color: rgba(var(--user-badge-color), 0.8);
 }
+.user-badge-profile {
+  --user-badge-padding-y: 0;
+  --user-badge-padding-x: 0;
+  --user-badge-border-radius: unset;
+  --user-badge-wrapper-gap: 1rem;
+  --user-badge-content-gap: 0.313rem;
+  --user-badge-color: var(--white-rgb);
+  background-color: unset;
+  cursor: default;
+}
+.user-badge-profile .user-badge-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  row-gap: var(--user-badge-wrapper-gap);
+  -webkit-column-gap: var(--user-badge-wrapper-gap);
+     -moz-column-gap: var(--user-badge-wrapper-gap);
+          column-gap: var(--user-badge-wrapper-gap);
+}
 
 :root {
   --user-card-padding-y: 1.25rem;
@@ -423,7 +452,7 @@
   --user-status-color: var(--white-rgb);
   --user-status-border-radius: 0.63rem;
   --user-status-font-size: 0.875rem;
-  --user-status-font-weight: 400;
+  --user-status-font-weight: 500;
   --user-status-line-height: 100%;
 }
 
@@ -459,6 +488,10 @@
   -webkit-column-gap: 0.625rem;
      -moz-column-gap: 0.625rem;
           column-gap: 0.625rem;
+}
+.user-status-light {
+  --user-status-background-color: var(--white-rgb);
+  --user-status-color: var(--blue-rgb);
 }
 
 .winner-card {

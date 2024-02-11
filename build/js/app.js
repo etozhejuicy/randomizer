@@ -1,10 +1,14 @@
+// константы
 const preloader = $('.preloader-container');
 const menu = $('.menu');
 const menuButton = $('[menu-open]');
 const menuToggle = $('[menu-toggle]');
 const menuClose = $('[menu-close]');
 
+// переменные
 var hint = $('.hint');
+var tooltip = $('[data-tooltip-id]');
+var tooltipButton = $('[data-tooltip-toggle]');
 
 // preloader
 if (preloader.length) {
@@ -39,6 +43,69 @@ if (menu.length) {
     menuButton.on('click', showMenu);
     menuClose.on('click', hideMenu);
     menuToggle.on('click', toggleMenu);
+}
+
+// tooltip
+if (tooltip.length) {
+
+    var tooltipePosition = () => {
+        if (tooltipButton.attr('data-tooltip-position') == 'bottom center') {
+            tooltip.attr('data-tooltip-pos', 'bottom center');
+            tooltip.css('top', tooltipButton.offset().top + (tooltipButton.height() * 2));
+            tooltip.css('left', tooltipButton.offset().left + (tooltipButton.width() / 2));
+        }
+
+        if (tooltipButton.attr('data-tooltip-position') == 'top center') {
+            tooltip.attr('data-tooltip-pos', 'top center');
+            tooltip.css('bottom', (tooltipButton.offset().top + (tooltipButton.height() * 2)) * -1);
+            tooltip.css('left', tooltipButton.offset().left + (tooltipButton.width() / 2));
+        }
+    }
+
+
+    function tooltipShow() {
+        tooltip.addClass('show');
+        tooltip.show();
+    }
+
+    function tooltipHide() {
+        tooltip.removeClass('show');
+        tooltip.hide();
+    }
+
+    function tooltipToggle() {
+        if (tooltip.hasClass('show')) {
+            tooltipHide();
+        } else {
+            tooltipShow();
+        }
+    }
+
+    if (tooltip.attr('data-tooltip-id') == tooltipButton.attr('data-tooltip-toggle')) {
+        tooltipePosition();
+
+        if (('ontouchstart' in window) ||
+            (navigator.maxTouchPoints > 0) ||
+            (navigator.msMaxTouchPoints > 0)) {
+            tooltipButton.on('touchstart', tooltipToggle);
+        } else {
+            tooltipButton.on('mouseenter', tooltipShow);
+            tooltipButton.on('mouseleave', tooltipHide);
+        }
+
+        $(window).on('resize', () => {
+            tooltipePosition();
+
+            if (('ontouchstart' in window) ||
+                (navigator.maxTouchPoints > 0) ||
+                (navigator.msMaxTouchPoints > 0)) {
+                tooltipButton.on('touchstart', tooltipToggle);
+            } else {
+                tooltipButton.on('mouseenter', tooltipShow);
+                tooltipButton.on('mouseleave', tooltipHide);
+            }
+        })
+    }
 }
 
 // анимация на главном экране с кубом

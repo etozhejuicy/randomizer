@@ -5,7 +5,7 @@
     --user-status-color: var(--white-rgb);
     --user-status-border-radius: 0.63rem;
     --user-status-font-size: 0.875rem;
-    --user-status-font-weight: 400;
+    --user-status-font-weight: 500;
     --user-status-line-height: 100%;
 }
 
@@ -30,5 +30,9 @@
         flex-wrap: nowrap;
         row-gap: 0.625rem;
         column-gap: 0.625rem;
+    }
+    &-light {
+        --user-status-background-color: var(--white-rgb);
+        --user-status-color: var(--blue-rgb);
     }
 }
