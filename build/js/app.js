@@ -12,11 +12,11 @@ if (preloader.length) {
         preloader.animate({
             opacity: 0,
             visibility: 'hidden'
-        }, 1000);
+        }, 500);
         setTimeout(() => {
             preloader.remove();
-        }, 1000)
-    }, 2000);
+        }, 500)
+    }, 1000);
 }
 
 // menu
@@ -42,24 +42,24 @@ if (menu.length) {
 }
 
 // анимация на главном экране с кубом
-if ($('#cube-animation').length) {
+if ($('#welcome-animation').length) {
     const animation = lottie.loadAnimation({
-        container: document.getElementById('cube-animation'),
+        container: document.getElementById('welcome-animation'),
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/cube.json'
+        path: '/assets/json/animation/welcome.json'
     });
 }
 
 // анимация на экране проверки
-if ($('#demo-animation').length) {
+if ($('#check-animation').length) {
     const animation = lottie.loadAnimation({
-        container: document.getElementById('demo-animation'),
+        container: document.getElementById('check-animation'),
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/demo.json'
+        path: '/assets/json/animation/check.json'
     });
 }
 
@@ -71,6 +71,39 @@ if ($('#success-animation').length) {
         loop: true,
         autoplay: true,
         path: '/assets/json/animation/success.json'
+    });
+}
+
+// анимация на экране не выполнены все условия
+if ($('#error-animation').length) {
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('error-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/json/animation/error.json'
+    });
+}
+
+// анимация на экране уже участник розыгрыша
+if ($('#invalid-animation').length) {
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('invalid-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/json/animation/invalid.json'
+    });
+}
+
+// анимация на экране на пути в ЛК
+if ($('#finish-animation').length) {
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('finish-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/json/animation/finish.json'
     });
 }
 

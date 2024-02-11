@@ -9,6 +9,7 @@
 
 // components
 @import "../scss/components/animations";
+@import "../scss/components/badge";
 @import "../scss/components/bottom";
 @import "../scss/components/buttons";
 @import "../scss/components/devider";
@@ -25,6 +26,7 @@
 
 // responsive design
 :root {
+    --scrollbar-thumb-color: var(--black-rgb);
     font-size: calc(100vw / 430 * 16);
     @media (min-width: 768px) {
         font-size: calc(100vw / 768 * 16);
@@ -50,6 +52,23 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0.375rem;
+    height: 0.313rem;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--scrollbar-thumb-color), 0.5);
+    border-radius: 3.125rem;
+    cursor: grabbing;
 }
 
 html {
