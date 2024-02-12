@@ -36,7 +36,7 @@
     text-transform: none;
     border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
     border-radius: var(--bs-border-radius);
-    background-color: var(--bs-btn-bg);
+    background: var(--bs-btn-bg);
     box-shadow: var(--bs-btn-box-shadow);
     transition:
         color 0.15s ease-in-out,
@@ -265,6 +265,15 @@
             --bs-btn-border-color: #{lighten($color, 10%)};
             --bs-btn-active-bg: #{darken($color, 5%)};
             --bs-btn-active-border-color: #{darken($color, 5%)};
+        }
+    }
+    .btn-gradient {
+        &:is(.btn-#{$value}),
+        &:is(.btn-outline-#{$value}) {
+            --bs-btn-bg: linear-gradient(225deg, #{lighten($color, 8%)}, #{darken($color, 14%)} 100%);
+            --bs-btn-color: var(--white);
+            --bs-btn-hover-color: var(--white);
+            --bs-btn-active-color: var(--white);
         }
     }
     .btn-colored {
