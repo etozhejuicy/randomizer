@@ -7986,8 +7986,7 @@ img {
   transition: background-image 0.6s ease;
 }
 .wrapper-max {
-  max-height: 100dvh;
-  max-height: 100vh;
+  max-height: 100svh;
 }
 
 .content {

@@ -118,8 +118,7 @@ img {
     overflow-x: clip;
     transition: background-image 0.6s ease;
     &-max {
-        max-height: 100dvh;
-        max-height: 100vh;
+        max-height: 100svh;
     }
 }
 
