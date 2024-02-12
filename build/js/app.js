@@ -153,7 +153,7 @@ if ($('#welcome-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './assets/json/animation/welcome.json'
+        path: 'assets/json/animation/welcome.json'
     });
 }
 
@@ -164,7 +164,7 @@ if ($('#check-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/check.json'
+        path: 'assets/json/animation/check.json'
     });
 }
 
@@ -175,7 +175,7 @@ if ($('#success-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/success.json'
+        path: 'assets/json/animation/success.json'
     });
 }
 
@@ -186,7 +186,7 @@ if ($('#error-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/error.json'
+        path: 'assets/json/animation/error.json'
     });
 }
 
@@ -197,7 +197,7 @@ if ($('#invalid-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/invalid.json'
+        path: 'assets/json/animation/invalid.json'
     });
 }
 
@@ -208,7 +208,7 @@ if ($('#finish-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/finish.json'
+        path: 'assets/json/animation/finish.json'
     });
 }
 
