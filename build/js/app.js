@@ -153,7 +153,7 @@ if ($('#welcome-animation').length) {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/json/animation/welcome.json'
+        path: '../assets/json/animation/welcome.json'
     });
 }
 
