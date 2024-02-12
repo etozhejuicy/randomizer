@@ -10,6 +10,7 @@ var hint = $('.hint');
 var tooltip = $('[data-tooltip-id]');
 var tooltipButton = $('[data-tooltip-toggle]');
 var buttonCopy = $('[data-form-copy]');
+var tabs = $('[data-tab-id]');
 
 // preloader
 if (preloader.length) {
@@ -121,6 +122,27 @@ if (buttonCopy.length) {
                 hint.removeClass('show');
             }, 2000);
         }
+    });
+}
+
+// вкладки
+if (tabs.length) {
+    var switcher = $(document).find('[data-tab-toggle]');
+
+    switcher.on('click', (e) => {
+        switcher.each((i, item) => {
+            $(item).removeClass('active');
+        });
+
+        $(e.currentTarget).addClass('active');
+
+        tabs.each((i, tab) => {
+            $(tab).removeClass('active');
+
+            if ($(tab).attr('data-tab-id') == $(e.currentTarget).attr('data-tab-toggle')) {
+                $(tab).addClass('active');
+            }
+        });
     });
 }
 

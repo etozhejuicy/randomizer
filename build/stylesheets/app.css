@@ -7569,6 +7569,92 @@ textarea.form-control.is-invalid {
 }
 
 :root {
+  --tab-block-padding-y: 0.25rem;
+  --tab-block-padding-x: 0.25rem;
+  --tab-block-border-radius: 0.63rem;
+  --tab-block-background-color: rgba(var(--white-rgb), 0.2);
+  --tab-button-padding-x: 0.88rem;
+  --tab-button-padding-y: 0.94rem;
+  --tab-button-background-color: var(--white-rgb);
+  --tab-button-color: var(--white-rgb);
+}
+
+.tab-block-horizontal {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-radius: var(--tab-block-border-radius);
+  background: var(--tab-block-background-color);
+  -webkit-box-shadow: var(--tab-block-box-shadow);
+          box-shadow: var(--tab-block-box-shadow);
+  -webkit-backdrop-filter: var(--tab-block-backdrop-filter);
+          backdrop-filter: var(--tab-block-backdrop-filter);
+  padding: var(--tab-block-padding-y) var(--tab-block-padding-x);
+}
+.tab-block-horizontal > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.tab-content {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.tab-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: var(--tab-button-padding-y) var(--tab-button-padding-x);
+  background: rgba(var(--tab-button-background-color), 0);
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.38rem;
+  color: rgba(var(--tab-button-color), 1);
+  border-radius: var(--tab-block-border-radius);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+.tab-button:not(:hover), .tab-button:not(:active) {
+  background: rgba(var(--tab-button-background-color), 0);
+}
+.tab-button:hover, .tab-button:active {
+  background: rgba(var(--tab-button-background-color), 0.25);
+}
+.tab-button:active, .tab-button:focus {
+  --tab-button-color: var(--blue-rgb);
+  background: rgba(var(--tab-button-background-color), 0.5);
+}
+.tab-button.active {
+  --tab-button-color: var(--blue-rgb);
+  background: rgba(var(--tab-button-background-color), 1);
+}
+
+:root {
   --tag-padding-y: 0.31rem;
   --tag-padding-x: 0.63rem;
   --tag-border-radius: 0.31rem;

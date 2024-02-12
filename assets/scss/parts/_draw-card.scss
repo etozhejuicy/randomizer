@@ -72,6 +72,7 @@
         row-gap: var(--draw-card-content-gap);
         column-gap: var(--draw-card-content-gap);
         font-size: 1rem;
+        line-height: 120%;
         color: rgba(var(--draw-card-color), 0.5);
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -79,6 +80,7 @@
         & > * {
             &:last-of-type {
                 display: flex;
+                align-items: center;
             }
         }
     }
