@@ -5412,6 +5412,20 @@ p {
   --bs-btn-hover-bg: rgba(var(--primary-rgb), 1);
 }
 
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-primary), .btn-more:is(.btn-outline-primary) {
+  --bs-btn-color: rgba(var(--primary-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--primary-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--primary-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--primary-rgb), 0.1);
+}
+
 .btn-progress:is(.btn-primary) .btn-progress-round, .btn-progress:is(.btn-outline-primary) .btn-progress-round {
   mix-blend-mode: hue;
   border-radius: inherit;
@@ -5532,6 +5546,20 @@ p {
   --bs-btn-bg: rgba(var(--secondary-rgb), 0.8);
 }
 
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-secondary), .btn-more:is(.btn-outline-secondary) {
+  --bs-btn-color: rgba(var(--secondary-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--secondary-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--secondary-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--secondary-rgb), 0.1);
+}
+
 .btn-progress:is(.btn-secondary) .btn-progress-round, .btn-progress:is(.btn-outline-secondary) .btn-progress-round {
   mix-blend-mode: hue;
   border-radius: inherit;
@@ -5649,6 +5677,20 @@ p {
   --bs-btn-hover-bg: rgba(var(--success-rgb), 1);
 }
 
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-success), .btn-more:is(.btn-outline-success) {
+  --bs-btn-color: rgba(var(--success-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--success-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--success-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--success-rgb), 0.1);
+}
+
 .btn-progress:is(.btn-success) .btn-progress-round, .btn-progress:is(.btn-outline-success) .btn-progress-round {
   mix-blend-mode: hue;
   border-radius: inherit;
@@ -5750,6 +5792,20 @@ p {
 .btn-dimmed:is(.btn-danger), .btn-dimmed:is(.btn-outline-danger) {
   --bs-btn-bg: rgba(var(--danger-rgb), 0.1);
   --bs-btn-hover-bg: rgba(var(--danger-rgb), 1);
+}
+
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-danger), .btn-more:is(.btn-outline-danger) {
+  --bs-btn-color: rgba(var(--danger-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--danger-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--danger-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--danger-rgb), 0.1);
 }
 
 .btn-progress:is(.btn-danger) .btn-progress-round, .btn-progress:is(.btn-outline-danger) .btn-progress-round {
@@ -5856,6 +5912,20 @@ p {
 .btn-dimmed:is(.btn-warning), .btn-dimmed:is(.btn-outline-warning) {
   --bs-btn-bg: rgba(var(--warning-rgb), 0.1);
   --bs-btn-hover-bg: rgba(var(--warning-rgb), 1);
+}
+
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-warning), .btn-more:is(.btn-outline-warning) {
+  --bs-btn-color: rgba(var(--warning-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--warning-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--warning-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--warning-rgb), 0.1);
 }
 
 .btn-progress:is(.btn-warning) .btn-progress-round, .btn-progress:is(.btn-outline-warning) .btn-progress-round {
@@ -5967,6 +6037,20 @@ p {
   --bs-btn-hover-bg: rgba(var(--white-rgb), 1);
 }
 
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-white), .btn-more:is(.btn-outline-white) {
+  --bs-btn-color: rgba(var(--white-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--white-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--white-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--white-rgb), 0.1);
+}
+
 .btn-progress:is(.btn-white) .btn-progress-round, .btn-progress:is(.btn-outline-white) .btn-progress-round {
   mix-blend-mode: hue;
   border-radius: inherit;
@@ -6069,6 +6153,20 @@ p {
 .btn-dimmed:is(.btn-black), .btn-dimmed:is(.btn-outline-black) {
   --bs-btn-bg: rgba(var(--black-rgb), 0.1);
   --bs-btn-hover-bg: rgba(var(--black-rgb), 1);
+}
+
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-black), .btn-more:is(.btn-outline-black) {
+  --bs-btn-color: rgba(var(--black-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--black-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--black-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--black-rgb), 0.1);
 }
 
 .btn-progress:is(.btn-black) .btn-progress-round, .btn-progress:is(.btn-outline-black) .btn-progress-round {
@@ -6174,6 +6272,20 @@ p {
   --bs-btn-hover-bg: rgba(var(--orange-rgb), 1);
 }
 
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-orange), .btn-more:is(.btn-outline-orange) {
+  --bs-btn-color: rgba(var(--orange-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--orange-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--orange-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--orange-rgb), 0.1);
+}
+
 .btn-progress:is(.btn-orange) .btn-progress-round, .btn-progress:is(.btn-outline-orange) .btn-progress-round {
   mix-blend-mode: hue;
   border-radius: inherit;
@@ -6275,6 +6387,20 @@ p {
 .btn-dimmed:is(.btn-purple), .btn-dimmed:is(.btn-outline-purple) {
   --bs-btn-bg: rgba(var(--purple-rgb), 0.1);
   --bs-btn-hover-bg: rgba(var(--purple-rgb), 1);
+}
+
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-purple), .btn-more:is(.btn-outline-purple) {
+  --bs-btn-color: rgba(var(--purple-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--purple-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--purple-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--purple-rgb), 0.1);
 }
 
 .btn-progress:is(.btn-purple) .btn-progress-round, .btn-progress:is(.btn-outline-purple) .btn-progress-round {
@@ -6380,6 +6506,20 @@ p {
   --bs-btn-hover-bg: rgba(var(--blue-rgb), 1);
 }
 
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-blue), .btn-more:is(.btn-outline-blue) {
+  --bs-btn-color: rgba(var(--blue-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--blue-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--blue-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--blue-rgb), 0.1);
+}
+
 .btn-progress:is(.btn-blue) .btn-progress-round, .btn-progress:is(.btn-outline-blue) .btn-progress-round {
   mix-blend-mode: hue;
   border-radius: inherit;
@@ -6481,6 +6621,20 @@ p {
 .btn-dimmed:is(.btn-transparent), .btn-dimmed:is(.btn-outline-transparent) {
   --bs-btn-bg: rgba(var(--transparent-rgb), 0.1);
   --bs-btn-hover-bg: rgba(var(--transparent-rgb), 1);
+}
+
+.btn-more {
+  --bs-btn-font-size: 1.13rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.38rem;
+  --bs-btn-box-shadow: unset;
+  --bs-btn-focus-shadow-rgb: unset;
+}
+.btn-more:is(.btn-transparent), .btn-more:is(.btn-outline-transparent) {
+  --bs-btn-color: rgba(var(--transparent-rgb), 0.5);
+  --bs-btn-bg: rgba(var(--transparent-rgb), 0);
+  --bs-btn-hover-color: rgba(var(--transparent-rgb), 1);
+  --bs-btn-hover-bg: rgba(var(--transparent-rgb), 0.1);
 }
 
 .btn-progress:is(.btn-transparent) .btn-progress-round, .btn-progress:is(.btn-outline-transparent) .btn-progress-round {

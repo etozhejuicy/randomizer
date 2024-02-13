@@ -299,6 +299,20 @@
             }
         }
     }
+    .btn-more {
+        --bs-btn-font-size: 1.13rem;
+        --bs-btn-font-weight: 500;
+        --bs-btn-line-height: 1.38rem;
+        --bs-btn-box-shadow: unset;
+        --bs-btn-focus-shadow-rgb: unset;
+        &:is(.btn-#{$value}),
+        &:is(.btn-outline-#{$value}) {
+            --bs-btn-color: rgba(var(--#{$value}-rgb), 0.5);
+            --bs-btn-bg: rgba(var(--#{$value}-rgb), 0);
+            --bs-btn-hover-color: rgba(var(--#{$value}-rgb), 1);
+            --bs-btn-hover-bg: rgba(var(--#{$value}-rgb), 0.1);
+        }
+    }
     .btn-progress {
         &:is(.btn-#{$value}),
         &:is(.btn-outline-#{$value}) {
